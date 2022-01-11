@@ -1,0 +1,155 @@
+/*************************Var sass**************************/
+$base-color: rgb(243,243,243);
+$primary:#68cdec;
+$secondary:rgb(66, 72, 75);
+$grey:rgb(165, 164, 164);
+$azulado: rgb(11, 51, 63);
+$celesteIntenso: rgb(188, 239, 255);
+$circle-color: rgb(233, 233, 233);
+/*************************Var sass**************************/
+
+/*************************fondo background**************************/
+.animacionFondo{
+  height: 100vh;
+  background: linear-gradient(20deg, $azulado, $primary, $celesteIntenso);
+  background-size: 200% 200%;
+  position: relative;
+  overflow: hidden;
+  -webkit-animation: Animation 6s ease infinite;
+  -moz-animation: Animation 6s ease infinite;
+  animation: Animation 6s ease infinite;
+}
+
+@-webkit-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@-moz-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@keyframes Animation {
+
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+/*************************fondo background**************************/
+
+/*************************Configuracion general botones**************************/
+.btn{
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  filter: drop-shadow(1px 1px 2px rgb(53, 51, 51));
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  img{
+    width: 130px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+  }
+  img:hover{
+    width: 145px;
+    transition: all 0.5s;
+  }
+}
+
+
+/*
+.material-icons.md-48 {
+  font-size: 90px;
+}
+*/
+/*************************Configuracion general botones**************************/
+
+/*************************AnimacionStop**************************/
+@mixin center {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+@mixin breakpoint($point) {
+    @if $point==tabletmobile {
+        @media (max-width: 1024px) and (min-width: 320px) {
+            @content ;
+        }
+    }
+    @else if $point==mobile {
+        @media (max-width: 480px) and (min-width: 320px) {
+            @content ;
+        }
+    }
+}
+
+
+.outer-circle{
+  @include center;
+  width: 90vmin;
+  height: 90vmin;
+  background: transparent;
+  border-radius: 50%;
+  animation: outer-circle 1.5s linear infinite;
+}
+
+@keyframes outer-circle{
+  0%{
+    border-color: transparent;
+  }
+  25%{
+    border-color: transparent;
+  }
+  75%{
+    transform: scale(1.2);
+    border: 1px solid $circle-color;
+  }
+  100% {
+    transform: scale(1.7);
+    border: 1px solid $circle-color;
+    border-color: transparent;
+  }
+}
+
+.outer-circle-2{
+  @include center;
+  width: 90vmin;
+  height: 90vmin;
+  background: transparent;
+  border-radius: 50%;
+  animation: outer-circle-2 1.5s linear infinite;
+}
+
+@keyframes outer-circle-2{
+  0%{
+    transform: scale(1.3);
+    border: 1px solid $circle-color;
+  }
+  50%{
+    transform: scale(1.7);
+    border-color: transparent;
+  }
+  75%{
+    border-color: transparent;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+/*************************AnimacionStop**************************/

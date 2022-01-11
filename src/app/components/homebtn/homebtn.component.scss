@@ -1,0 +1,17 @@
+
+.btnHome{
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  .material-icons.md-48 {
+    font-size: 48px;
+    color: white;
+    filter: drop-shadow(1px 1px 2px rgb(53, 51, 51));
+  }
+
+  .material-icons.md-48:hover{
+    font-size: 55px;
+    transition: all 0.5s;
+    filter: drop-shadow(1px 1px 2px rgb(53, 51, 51));
+  }
+}

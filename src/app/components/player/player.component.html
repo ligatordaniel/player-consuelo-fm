@@ -1,0 +1,91 @@
+<!--http://unlimited1-cl.digitalproserver.com/madero_serena/mp3/icecast.audio-->
+<!--https://av03.upstream-media.ch/canal3francais-192.mp3-->
+<!--https://node-04.zeno.fm/wz8tgfxv9vzuv?rj-ttl=5&rj-tok=AAABcUCU-6gAqng4oN6OtF0JsA-->
+<!--http://190.96.82.67:8000/stream            este es -->
+<div class="@keyframes animacionFondo">
+<app-homebtn></app-homebtn>
+  <div *ngIf="showStopButton" class="@keyframes outer-circle"></div>
+  <div *ngIf="showStopButton" class="@keyframes outer-circle-2"></div>
+
+
+        <div class="divBoton">
+          <audio id="demo" src="{{url}}" type="audio/ogg" preload="none"></audio>
+          <!--<audio id="demo"  src="{{url}}" type="audio/mpeg"></audio>-->
+        </div>
+
+          <div *ngIf="showPlayButton"
+            (click)="showPlayButton=!showPlayButton; showStopButton=!showStopButton;"
+            type="button" class="btn playButton"
+            onclick="document.getElementById('demo').play()">
+            <img src="../../assets/img/logoSoloNegro.png" alt="logoPlay">
+          </div>
+
+
+          <div *ngIf="showStopButton"
+            (click)="showPlayButton=!showPlayButton; showStopButton=!showStopButton;"
+            type="button" class="btn stopButton"
+            onclick="document.getElementById('demo').pause()">
+            <img src="../../assets/img/logoSoloStopNegro.png" alt="logoPlay">
+          </div>
+
+
+</div>
+
+
+
+
+
+
+<!--
+      <button *ngIf="showPlayButton"
+    (click)="showPlayButton=!showPlayButton; showStopButton=!showStopButton;"
+    type="button" class="btn btn-outline-info btn-lg btn-circle playButton"
+    onclick="document.getElementById('demo').play()">
+    <img src="../../assets/img/logoSoloNegro.png" alt="logoPlay">
+    </button>
+
+
+    <button *ngIf="showStopButton"
+    (click)="showPlayButton=!showPlayButton; showStopButton=!showStopButton;"
+    type="button" class="btn btn-outline-danger btn-lg btn-circle stopButton"
+    onclick="document.getElementById('demo').pause()">
+    <i class="material-icons md-48">stop</i>
+    </button>
+-->
+
+<!--
+<audio id="demo"  src="https://av03.upstream-media.ch/canal3francais-192.mp3" type="audio/mpeg"></audio>
+
+
+<div class="divBoton">
+
+  <button *ngIf="playButton" (click)="playButton=!playButton; stopButton=!stopButton;"
+  onclick="document.getElementById('demo').play()"
+  type="button" class="btn btn-outline-info btn-lg btn-circle playButton">
+  <i class="material-icons md-48">play_arrow</i>
+  </button>
+
+
+
+  <button *ngIf="stopButton" (click)="stopButton=!stopButton; playButton=!playButton;"
+  onclick="document.getElementById('demo').pause()"
+  type="button" class="btn btn-info btn-lg btn-circle playButton">
+  <i class="material-icons md-48">stop</i>
+  </button>
+
+
+
+</div>
+
+-->
+
+    <!--recordar que estamos cambiando los botones con material icon
+    recuerda agregar cms como api
+    -->
+
+<!--
+  <img src="https://www.codigos-qr.com/qr/php/qr_img.php?d=https%3A%2F%2Fstreamingck1.firebaseapp.com%2F&s=6&e=m" alt="Generador de Códigos QR Codes"/>
+  https://www.codigos-qr.com/generador-de-codigos-qr/
+  codigo qr y su link
+  https://www.youtube.com/watch?v=RWdNVCa4KMM&feature=youtu.be
+-->

@@ -1,0 +1,28 @@
+$base-color: rgb(243,243,243);
+$primary:#68cdec;
+$secondary:rgb(66, 72, 75);
+$grey:rgb(165, 164, 164);
+
+
+a {
+  color: $base-color;
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  margin-right: 15px;
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+
+a:hover {
+  color: $base-color;
+  font-size: 16px;
+  display: block;
+  margin-right: 15px;
+  text-align: right;
+  position:absolute;
+  bottom:0;
+  right:0;
+}

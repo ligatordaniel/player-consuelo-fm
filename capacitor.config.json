@@ -1,0 +1,13 @@
+{
+  "appId": "com.radioconsuelofm.app",
+  "appName": "Dungun",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist/radionconsuelo",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

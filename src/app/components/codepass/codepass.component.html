@@ -1,0 +1,20 @@
+<div class="fondo slide-top">
+  <img class="imgPortada" src="../../assets/img/imgPortada.jpg" alt="imgFondo">
+  <div class="codePassSettings">
+    <p class="titulo">FIND YOUR EVENT</p>
+    <div class="form-group m-3">
+        <input type="password"
+        class="form__field"
+        placeholder="  Event Code"
+        [(ngModel)]="nombreEvento">
+    </div>
+
+    <button class="btn btn-info"
+      (click)="validacion(nombreEvento)" >
+      <span class="btnText">SEARCH</span>
+    </button>
+    <img class="imgLogo" src="../../assets/img/logoHorizontalBlanco.png" alt="imgLogoBlanco">
+    <app-publicidadck></app-publicidadck>
+  </div>
+</div>
+
